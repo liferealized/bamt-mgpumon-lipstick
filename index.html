@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="/stylesheets/mgpumon.css" />
+		<title>BAMT - mgpumon</title>
+		<script type="application/ecmascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="application/ecmascript" src="/javascripts/application.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="overview" class="navbar navbar-fixed-top">
+				<div class="navbar-inner">
+					<table>
+						<tr>
+							<td><img src="/bamt/bamt_small.png" alt="BAMT" class="logo" /></td>
+							<td>Farm hashrate:<br /><h1>29635.61 Mh/s</h1></td>
+							<td>440337 total accepted shares<br />3211 total invalid shares<br />0.724% farm wide reject ratio</td>
+							<td>85 GPUs are working fine<br />5 GPUs have issues<br />5 problems in the farm</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<div id="content">
+			
+				<div class="row-fluid">
+					<div class="span12">
+						<h1>29635.61 Mh/s @ warehouse, 18 nodes and 90 GPUs, 5 problems</h1>
+					</div>
+				</div>
+				
+				<div class="node row-fluid">
+					<div class="quick-stats span3 ok">
+						<h2><a href="http://192.168.2.100/cgi-bin/status.pl">100</a><br /> 1478.43 Mh/s</h2>
+						<p>192.168.2.100</p>
+					</div>
+					<div class="full-stats span9">
+						<table class="table table-bordered table-striped table-condensed">
+							<thead>
+								<tr>
+									<th>GPU</th>
+									<th>Pool</th>
+									<th>Temp</th>
+									<th>Load</th>
+									<th>Rate</th>
+									<th colspan=2>Accept/Invalid</th>
+									<th>GPU Family</th>
+									<th>Fan% (rpm)</th>
+									<th>Core</th>
+									<th>Memory</th>
+									<th>Power</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>0</td>
+									<td>cgsnoop/127.0.0.1</td>
+									<td>73.50c</td>
+									<td>99%</td>
+									<td>365.55 Mh/s</td>
+									<td>262 / 2</td>
+									<td>0.76%</td>
+									<td>unknown (cgsnoop)</td>
+									<td>49% (2352)</td>
+									<td>895 Mhz</td>
+									<td>1000 Mhz</td>
+									<td>1.100v</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>cgsnoop/127.0.0.1</td>
+									<td>73.00c</td>
+									<td>99%</td>
+									<td>353.2 Mh/s</td>
+									<td>257 / 1</td>
+									<td>0.39%</td>
+									<td>unknown (cgsnoop)</td>
+									<td>43% (1939)</td>
+									<td>895 Mhz</td>
+									<td>1000 Mhz</td>
+									<td>1.100v</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>cgsnoop/127.0.0.1</td>
+									<td>60.80c</td>
+									<td>99%</td>
+									<td>759.68 Mh/s</td>
+									<td>574 / 8</td>
+									<td>1.37%</td>
+									<td>unknown (cgsnoop)</td>
+									<td>0% (0)</td>
+									<td>0 Mhz</td>
+									<td>0 Mhz</td>
+									<td>0v</td>
+								</tr>						
+							</tbody>
+						</table>
+					</div>
+				</div>
+				
+				<div class="node row-fluid">
+					<div class="quick-stats span3 error">
+						<h2><a href="http://192.168.2.101/cgi-bin/status.pl">101</a><br /> 1405.57 Mh/s</h2>
+						<p>192.168.2.101</p>
+						<p class="alert alert-error">GPU 0 is below minimum load</p>
+					</div>
+					<div class="full-stats span9">
+						<table class="table table-bordered table-striped table-condensed">
+							<thead>
+								<tr>
+									<th>GPU</th>
+									<th>Pool</th>
+									<th>Temp</th>
+									<th>Load</th>
+									<th>Rate</th>
+									<th colspan="2">Accept / Invalid</th>
+									<th>GPU Family</th>
+									<th>Fan% (rpm)</th>
+									<th>Core</th>
+									<th>Memory</th>
+									<th>Power</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="alert alert-error">
+									<td>0</td>
+									<td>http://gpumax.com:8332</td>
+									<td>78.5c</td>
+									<td class="error">0%</td>
+									<td>367.95 Mh/s</td>
+									<td>497 / 5</td>
+									<td>1.00%</td>
+									<td>5800 Series</td>
+									<td>85% (3870)</td>
+									<td>895 Mhz</td>
+									<td>300 Mhz</td>
+									<td>1.088v</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>http://gpumax.com:8332</td>
+									<td>77.5c</td>
+									<td>99%</td>
+									<td>304.08 Mh/s</td>
+									<td>448 / 4</td>
+									<td>0.88%</td>
+									<td>5800 Series</td>
+									<td>85% (4090)</td>
+									<td>730 Mhz</td>
+									<td>300 Mhz</td>
+									<td>1.088v</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>http://gpumax.com:8332</td>
+									<td>73c</td>
+									<td>99%</td>
+									<td>367.93 Mh/s</td>
+									<td>538 / 6</td>
+									<td>1.10%</td>
+									<td>5800 Series</td>
+									<td>51% (2421)</td>
+									<td>900 Mhz</td>
+									<td>300 Mhz</td>
+									<td>1.088v</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>http://gpumax.com:8332</td>
+									<td>77c</td>
+									<td>99%</td>
+									<td>365.61 Mh/s</td>
+									<td>574 / 6</td>
+									<td>1.03%</td>
+									<td>5800 Series</td>
+									<td>85% (4209)</td>
+									<td>900 Mhz</td>
+									<td>300 Mhz</td>
+									<td>1.088v</td>
+								</tr>						
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+
+
